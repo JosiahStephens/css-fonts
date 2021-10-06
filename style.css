@@ -1,0 +1,17 @@
+.root {
+    --au-chico: #a45d5d;
+    --koromiko: #ffc068;
+    --wild-sand: #f6f6f6;
+    --gray: #8e8e8e;
+    --scorpion: #575757;
+}
+
+.button {
+    display: inline-block;
+    color: var(--au-chico);
+    border: 2px solid var(--au-chico);
+    border-radius: 4px;
+    background: var(--wild-sand);
+    padding: 1rem 2rem 1.2rem;
+    margin-top: 2rem;
+}
