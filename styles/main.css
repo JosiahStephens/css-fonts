@@ -6,12 +6,30 @@
     --scorpion: #575757;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
+}
+
 .button {
+    cursor: pointer;
     display: inline-block;
     color: var(--au-chico);
     border: 2px solid var(--au-chico);
     border-radius: 4px;
-    background: var(--wild-sand);
     padding: 1rem 2rem 1.2rem;
     margin-top: 2rem;
+    transition: background-color 300ms, color 300ms;
+}
+
+.button:hover {
+    color: var(--au-chico);
+
 }
