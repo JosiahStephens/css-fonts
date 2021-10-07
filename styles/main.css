@@ -1,10 +1,11 @@
 :root {
-    --au-chico:     #a45d5d;
-    --dark-au-chico:#733f40;
-    --koromiko:     #ffc068;
-    --wild-sand:    #f6f6f6;
-    --gray:         #8e8e8e;
-    --scorpion:     #575757;
+    --au-chico: #a45d5d;
+    --dark-au-chico: #733f40;
+    --koromiko: #ffc068;
+    --wild-sand: #f6f6f6;
+    --gray: #8e8e8e;
+    --scorpion: #575757;
+    --dark-scorpion: #464646;
     background-color: var(--wild-sand);
 }
 
@@ -14,28 +15,53 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    color: var(--scorpion)
 }
 
 aside {
     background-color: var(--koromiko);
-    color: var(--dark-au-chico);
+    color: var(--dark-scorpion);
     margin-top: 4rem;
     padding: 3rem 1rem;
 }
 
 aside h2 {
-    color: var(--dark-au-chico);
+    color: var(--dark-scorpion);
 }
 
-h1, h2, h3, h4, h5, h6 {
+footer {
+    /* margin: 0 auto; */
+    text-align: center;
+    margin: 5rem;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto Slab", serif;
+}
+
+picture img {
+    width: 100%;
+}
+
+.inline-picture {
+    margin-top: 2rem;
+    max-width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.2;
-  margin: 1em 0 0.5em;
+    line-height: 1.2;
+    margin: 1em 0 0.5em;
 }
 
 h1 {
@@ -47,9 +73,10 @@ h2 {
     color: var(--scorpion);
     font-size: 2rem;
 }
+
 h3 {
     color: var(--dark-au-chico);
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 a:link {
@@ -66,7 +93,8 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active, a:focus {
+a:active,
+a:focus {
     color: var(--dark-au-chico);
 }
 
@@ -96,7 +124,8 @@ main {
     text-decoration: none;
 }
 
-.button:active, .button:focus {
+.button:active,
+.button:focus {
     background-color: var(--dark-au-chico);
     box-shadow: 0 0 0 2px var(--dark-au-chico);
 }
