@@ -1,9 +1,11 @@
-.root {
+:root {
     --au-chico:     #a45d5d;
+    --dark-au-chico:#733f40;
     --koromiko:     #ffc068;
     --wild-sand:    #f6f6f6;
     --gray:         #8e8e8e;
     --scorpion:     #575757;
+    background-color: var(--wild-sand);
 }
 
 * {
@@ -14,23 +16,73 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+aside {
+    background-color: var(--koromiko);
+    color: var(--dark-au-chico);
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+}
+
+aside h2 {
+    color: var(--dark-au-chico);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--scorpion);
+    font-size: 2rem;
+}
+h3 {
+    color: var(--dark-au-chico);
+    font-size: 1.5rem; 
 }
 
 a:link {
     color: var(--au-chico);
     font-weight: bold;
     text-decoration: none;
-  }
+}
+
+a:visited {
+    color: var(--au-chico);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active, a:focus {
+    color: var(--dark-au-chico);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 0 1rem;
+}
 
 .button {
-    background-color: var(--au-chico);
+    background-color: var(--wild-sand);
     cursor: pointer;
     display: inline-block;
     color: var(--au-chico);
-    border: 10px solid var(--wild-sand);
-    border-radius: 4px;
+    border: 2px solid var(--au-chico);
+    border-radius: 2px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     padding: 1rem 2rem 1.2rem;
@@ -39,5 +91,12 @@ a:link {
 }
 
 .button:hover {
-    color: var(--au-chico);
+    background-color: var(--au-chico);
+    color: var(--wild-sand);
+    text-decoration: none;
+}
+
+.button:active, .button:focus {
+    background-color: var(--dark-au-chico);
+    box-shadow: 0 0 0 2px var(--dark-au-chico);
 }
