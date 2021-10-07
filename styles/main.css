@@ -15,7 +15,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: var(--scorpion)
+    color: var(--scorpion);
+    line-height: 1.5;
 }
 
 aside {
