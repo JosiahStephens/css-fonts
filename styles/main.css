@@ -98,6 +98,15 @@ a:focus {
     color: var(--dark-au-chico);
 }
 
+.dead-link {
+    color: var(--scorpion);
+}
+
+.dead-link:hover {
+    text-decoration: none;
+    color: var(--scorpion);
+}
+
 main {
     margin: 0 auto;
     max-width: 50rem;
